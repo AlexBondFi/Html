@@ -1,0 +1,76 @@
+body {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    width: 200px;
+    background-color: rgb(241, 147, 147);
+    border-radius: 5px;
+    border: 2px solid rgb(40, 0, 0);
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+   
+}
+
+section {
+    height: 500px;
+    /* background-image: url(bg.png);
+    background-repeat: none;
+    background-attachment: fixed; "lock background while scroll"
+    background-position: center center;
+    background-size: cover; */
+    background: url(bg.png) #333 no-repeat fixed center center/cover;
+}
+
+.box {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin: 10px;
+}
+.box1 {
+    background-color: violet;
+    border: 10px dotted white;
+}
+.box2 {
+    background-color: blue;
+    border: 10px double white;
+}
+.box3 {
+    background-color: rgb(58, 68, 43);
+    border-top: 10px solid green;
+    border-bottom: 10px solid blue;
+    border-left: 10px solid red;
+    border-right: 10px solid yellow;
+}
+.box4 {
+    background-color: rgb(165, 210, 155);
+    border: 10px dashed rgb(216, 215, 114);
+    border-radius: 5px;
+}
+.box5 {
+    background-color: red;
+    border: 10px dotted white;
+    border-radius: 50%;
+}

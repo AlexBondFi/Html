@@ -1,0 +1,16 @@
+p{ 
+    color:orange;
+}
+
+body {
+    background-color: black;
+}
+#that_text {
+    color: bisque;
+    text-align: center;
+}
+.main_group {
+    color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}

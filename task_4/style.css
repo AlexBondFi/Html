@@ -1,0 +1,121 @@
+body {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    /* background-color: blueviolet; */
+    padding: 10px;
+    margin: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    padding-top: 20px;
+    
+}
+
+.pic {
+    /* display: block; */
+    height: 200px;
+}
+
+img {
+    
+    height: 100%;
+   
+}
+.txt {
+    display: block;
+    height: 200px;
+}
+.pic1,.pic3,.txt2 {
+    float: left;
+    padding-right: 20px;
+}
+
+.pic2,.txt1,.txt3 {
+    float: right;
+}
+
+.projects,.skills {
+    background-color: aquamarine;
+    height: 300px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.about_me{
+    background-color: lightpink;
+    height: 300px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+section {
+    height: 500px;
+    background-image: url(bg.png);
+    background-repeat: none;
+    background-attachment: fixed; 
+    /* "lock background while scroll" */
+    background-position: center center;
+    background-size: cover;
+    background: url(bg.png) #333 no-repeat fixed center center/cover;
+}
+
+footer{
+    display: block;
+    background-color: blueviolet;
+    height: 50px;
+    margin-top: 0;
+    padding-top: 5px;
+    border-top: 0;
+    text-align: center;
+
+}
+
+/* .box {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin: 10px;
+}
+.box1 {
+    background-color: violet;
+    border: 10px dotted white;
+}
+.box2 {
+    background-color: blue;
+    border: 10px double white;
+}
+.box3 {
+    background-color: rgb(58, 68, 43);
+    border-top: 10px solid green;
+    border-bottom: 10px solid blue;
+    border-left: 10px solid red;
+    border-right: 10px solid yellow;
+}
+.box4 {
+    background-color: rgb(165, 210, 155);
+    border: 10px dashed rgb(216, 215, 114);
+    border-radius: 5px;
+}
+.box5 {
+    background-color: red;
+    border: 10px dotted white;
+    border-radius: 50%;
+} */

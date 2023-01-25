@@ -1,0 +1,25 @@
+body {background-color: #f6f4c6;
+/* background-image: url(bg.png); */
+}
+img {
+    width: 200px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: aliceblue;
+    display: inline;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block; /* Inline ELEMENT doesn't have height or width. Only Inline-BLOCK has it all. */
+    width: 100px;
+}
+ol li {
+    list-style-type: lower-greek;
+}
+
