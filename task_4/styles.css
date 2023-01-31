@@ -1,0 +1,65 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* size of all elements no more than set size */
+}
+/* "Universal reset". Affects all elemaents at the page */
+
+body {
+    background-color: aquamarine;
+    font-family: 'Raleway', sans-serif;
+}
+
+input, textarea, select {
+    font-family: inherit;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: crimson;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+
+nav ul li a {
+    color: crimson;
+    text-decoration: none;
+    padding: 10px;
+    display:block;     
+}
+
+main, header, h2 {
+    padding: 20px;
+}
+
+
+h2 {
+    padding-left: 0;
+    font-size: 50px;
+    padding: 150px 0;
+    text-align: center;
+}
+
+p {
+    line-height: 1.58;
+}
+
+.box {
+    background-color: bisque;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 0px;
+    float: left;
+    /* margin: 10px 20px (2 or 4 digits mean pairs (top or bottom) or sides margin) */
+    
+}
