@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+header {
+    color: azure;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    margin-left: 10rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 2rem;
+}
+nav ul li a {
+    color: bisque;
+    text-decoration: none;
+}
+
+#hero_banner {
+    height: 75vh;
+    background: url('https://images.pexels.com/photos/1183434/pexels-photo-1183434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    color: red;
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+h4 {
+    margin: 1rem 0;
+}
+
+img {
+    width: 100%;
+    height: fit-content;
+    border-radius: 2px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+}
+
+.projectsCont{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.box {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 2px;
+}
+
+.aboutCont{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+#aboutCont{
+    background-color: aqua;
+}
+
+#aboutText {
+    display: flex;
+    padding: 1rem;
+    width: 75vw;
+}
+
+#aboutPic {
+    display: flex;
+    padding: 1rem;
+    width: 25vw;
+}
+
+.skillsCont{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+#skillsText {
+    display: flex;
+    padding: 1rem;
+    width: 75vw;
+}
+
+#skillsPic {
+    display: flex;
+    width: 25vw;
+    padding: 1rem;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+}
+#contactCont{
+    height: fit-content;
+}
+label {
+    margin-right: 3rem;
+}
+input {
+    width: 25rem;
+    border-radius: 2px;
+}
+
+#Message {
+    height: 3rem;
+}
+
+.insert {
+    display: flex;
+    margin: 2rem;
+   justify-content: space-between;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+}
+button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 2px;
+    background-color: aqua;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+
+}
+footer{
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 375px) {
+    header {
+        padding: 1rem;
+    }
+    nav ul li {
+        display: flex;
+        justify-content: right;
+    }
+    nav ul li a {
+        color: bisque;
+        text-decoration: none;
+    }
+    .logo {
+        margin-left: 1rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin: 1rem;
+        margin-bottom: 0;
+        text-align: center;   
+    }
+    
+    h4 {
+        margin: 1rem 0;
+    }
+    
+    img {
+
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    
+    }
+    
+    .projectsCont{
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    
+    .aboutCont{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0;
+    }
+    #aboutPic {
+        width: 75vw;
+    }
+    
+    .skillsCont{
+        flex-direction: column;
+        align-items: center;    
+        margin-top: 0;
+    }
+   
+    #skillsPic {
+        width: 75vw;
+    }
+    
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    label {
+        margin: 1rem;
+    }
+    input {
+        width: 10rem;
+    }
+    
+    .insert {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 1rem;
+    }
+    button {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    
+    }
+}
