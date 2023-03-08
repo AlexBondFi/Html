@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overscroll-behavior: none;
+
+}
+
+body {
+    background-color: aliceblue;
+}
+.myheader {
+    color: azure;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+}
+.myheader.scrolled{
+    color: black;
+    background-color: lightgray;
+}
+
+.logo {
+    display: flex;
+    margin-left: 10rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 2rem;
+}
+nav ul li a {
+    color: bisque;
+    text-decoration: none;
+}
+
+.mobile {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    display: none;
+
+}
+
+
+h3 {
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+img {
+    width: 100%;
+    height: fit-content;
+    border-radius: 2px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+}
+
+
+
+.photogrid {
+    display: grid;
+    justify-items: stretch;
+    grid-template-areas: 
+    "a b c d"
+    "a b e e"
+    "a f e e"
+    "g h e e"
+    "g h i i";
+    grid-template-columns: 4fr 3fr 2fr 3fr;
+    grid-template-rows: 200px 100px 200px 100px 200px;
+    gap: 0.5rem;
+    margin: 1rem auto;
+    width: 1250px;
+    /* justify-items: center; */
+    /* align-items: center; */
+    }
+
+
+.a {
+    grid-area: a;
+    background-image: url(img/pic1.jpeg);
+    background-size: cover;
+}
+.b {
+    grid-area: b;
+    background-color: rgb(0, 255, 225);
+    background-image: url(img/sq1.jpeg);
+    background-size: cover;
+}
+.c {
+    grid-area: c;
+    background-color: rgb(142, 142, 142);
+    background-image: url(img/sq2.jpeg);
+    background-size: cover;
+}
+.d {
+    grid-area: d;
+    background-color: rgb(255, 157, 0);
+    background-image: url(img/hor1.jpeg);
+    background-size: cover;
+}
+.e {
+    grid-area: e;
+    background-color: rgb(255, 0, 81);
+    background-image: url(img/hor2.jpeg);
+    background-size: cover;
+}
+.f {
+    grid-area: f;
+    background-color: rgb(255, 255, 0);
+    background-image: url(img/hor4.jpeg);
+    background-size: cover;
+}
+.g {
+    grid-area: g;
+    background-color: rgb(79, 79, 22);
+    background-image: url(img/hor3.jpeg);
+    background-size: cover;
+}
+.h {
+    grid-area: h;
+    background-color: rgb(111, 0, 255);
+    background-image: url(img/ver1.jpeg);
+    background-size: cover;
+}
+.i {
+    grid-area: i;
+    background-color: rgb(105, 235, 177);
+    background-image: url(img/hor5.jpeg);
+    background-size: cover;
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+}
+#contactCont{
+    height: fit-content;
+}
+label {
+    margin-right: 3rem;
+}
+input {
+    width: 25rem;
+    border-radius: 2px;
+}
+
+#Message {
+    height: 3rem;
+}
+
+.insert {
+    display: flex;
+    margin: 2rem;
+   justify-content: space-between;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+}
+button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 2px;
+    background-color: aqua;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+
+}
+footer{
+    text-align: center;
+}
+
+#toTop{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+}
+
+
+
+
+@media (max-width: 375px) {
+    header {
+        padding: 1rem;
+    }
+    nav ul li {
+        display: flex;
+        justify-content: right;
+    }
+    nav ul li a {
+        color: bisque;
+        text-decoration: none;
+    }
+    .logo {
+        margin-left: 1rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin: 1rem;
+        margin-bottom: 0;
+        text-align: center;   
+    }
+    
+    h4 {
+        margin: 1rem 0;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    
+    }
+    
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    label {
+        margin: 1rem;
+    }
+    input {
+        width: 10rem;
+    }
+    
+    .insert {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 1rem;
+    }
+    button {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    
+    }
+}
+
+@media (max-width: 975px) {
+    .mobile{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        transition: all 5s;
+    }
+    nav ul.responsive{
+        display: block;
+        background-color: red;
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: 9rem;
+        width: 100%;
+    }
+    ul.responsive li {
+        display: block;
+        margin: 1rem;
+    }
+
+}

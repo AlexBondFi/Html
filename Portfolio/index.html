@@ -5,40 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <header class="myheader">
       <div class="logo"><h1>ALEX BOND</h1></div>
       <nav>
+        <button class="mobile">
+          <span class="material-symbols-outlined"> menu</span>
+        </button>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#projectsCont">Projects</a></li>
+          <li><a href="#aboutCont">About</a></li>
+          <li><a href="#skillsCont">Skills</a></li>
+          <li><a href="/Portfolio/gallery2.html">Gallery</a></li>
+          <li><a href="#contactCont">Contacts</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="hero_banner">
+        <!-- ########## ANIMATION ########## -->
+
+        <div class="snowflakes" aria-hidden="true">
+          <div class="snowflake">❅</div>
+          <div class="snowflake">❅</div>
+          <div class="snowflake">❆</div>
+          <div class="snowflake">❄</div>
+          <div class="snowflake">❅</div>
+          <div class="snowflake">❆</div>
+          <div class="snowflake">❄</div>
+          <div class="snowflake">❅</div>
+          <div class="snowflake">❆</div>
+          <div class="snowflake">❄</div>
+        </div>
+        <!-- ########## ANIMATION ########## -->
         <h2>welcome to my portfolio</h2>
       </section>
-      <div class="container">
+      <div class="container" id="projectsCont">
         <h3>Projects</h3>
         <div class="projectsCont">
           <div class="box">
-            <img src="pic1.jpeg" alt="proj1" />
+            <div class="imgAction">
+              <img src="img/pic1.jpeg" alt="proj1" />
+            </div>
             <h4>Lorem ipsum dolor sit</h4>
             <p>HTML, CSS, JavaScript</p>
           </div>
           <div class="box">
-            <img src="pic1.jpeg" alt="proj2" />
+            <div class="imgAction">
+              <img src="img/pic1.jpeg" alt="proj2" />
+            </div>
             <h4>Lorem ipsum dolor sit</h4>
             <p>HTML, CSS, JavaScript</p>
           </div>
           <div class="box">
-            <img src="pic1.jpeg" alt="proj3" />
+            <div class="imgAction">
+              <img src="img/pic1.jpeg" alt="proj3" />
+            </div>
             <h4>Lorem ipsum dolor sit</h4>
             <p>HTML, CSS, JavaScript</p>
           </div>
@@ -65,32 +94,41 @@
             </p>
           </section>
           <section id="aboutPic">
-            <img src="pic1.jpeg" alt="pic1" />
+            <img src="img/pic1.jpeg" alt="pic1" />
           </section>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="skillsCont">
         <h3>Skills</h3>
         <div class="skillsCont">
-          <section id="skillsPic">
-            <img src="pic1.jpeg" alt="pic1" />
-          </section>
-          <section id="skillsText">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio,
-              nesciunt, dolor tenetur atque corrupti quia excepturi debitis
-              explicabo cum ipsum illum voluptatum voluptas, commodi odit eum
-              animi veritatis aspernatur dicta? Adipisci laudantium vitae libero
-              vel ipsa maxime dicta facilis perspiciatis, mollitia dignissimos
-              optio voluptas modi fuga tenetur minus unde natus? Nihil placeat
-              beatae in, nam pariatur sequi eligendi nemo? Veritatis nemo
-              recusandae quo quod ratione natus eligendi velit. Rerum dolore
-              quod eius quasi nesciunt fugiat, incidunt, laboriosam numquam
-              impedit consectetur pariatur quos quam recusandae officiis est sit
-              accusamus, magni placeat perferendis voluptatibus odio error
-              explicabo asperiores! Officiis dolorem est earum.
-            </p>
-          </section>
+          <div class="skill" id="html5">
+            <img src="#" alt="html5" />
+            <label class="labelskill" for="html5bar">HTML5</label>
+            <progress class="skillsBar" id="html5bar" max="100" value="70">
+              70%
+            </progress>
+          </div>
+          <div class="skill" id="css3">
+            <img src="#" alt="css3" />
+            <label class="labelskill" for="css3bar">CSS3</label>
+            <progress class="skillsBar" id="css3bar" max="100" value="50">
+              50%
+            </progress>
+          </div>
+          <div class="skill" id="teaching">
+            <img src="#" alt="teaching" />
+            <label class="labelskill" for="teachingbar">TEACHING</label>
+            <progress class="skillsBar" id="teachingbar" max="100" value="20">
+              220%
+            </progress>
+          </div>
+          <div class="skill" id="couching">
+            <img src="#" alt="couching" />
+            <label class="labelskill" for="couchingbar">COUCHING</label>
+            <progress class="skillsBar" id="couchingbar" max="100" value="40">
+              40%
+            </progress>
+          </div>
         </div>
       </div>
       <!-- ####### -->
@@ -118,7 +156,9 @@
       </div>
     </main>
     <footer>
-      <p>Copyright my website 2023</p>
+      <small>Copyright my website 2023</small>
+      <button id="toTop" class="btn above">To the top</button>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
